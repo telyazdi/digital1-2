@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا — ديجيتال 1.2</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Favicon.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/style.css">
+    
+    <style>
+        /* تطبيق خط Tajawal على كامل الصفحة */
+        body {
+            font-family: 'Tajawal', sans-serif !important;
+        }
+
+        /* تنسيقات إضافية مخصصة للفورم لجعله جذاباً */
+        .vv-form-group { margin-bottom: 20px; text-align: right; }
+        .vv-form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #333; }
+        .vv-input { 
+            width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; 
+            font-size: 16px; transition: border-color 0.3s ease; box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .vv-input:focus { border-color: #007bff; outline: none; box-shadow: 0 0 5px rgba(0,123,255,0.1); }
+        .vv-submit-btn {
+            background: #007bff; color: white; border: none; padding: 15px 30px; 
+            border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; 
+            width: 100%; transition: background 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .vv-submit-btn:hover { background: #0056b3; }
+        
+        #success-message {
+            display: none; background: #d4edda; color: #155724; padding: 15px;
+            border-radius: 8px; margin-top: 20px; text-align: center; border: 1px solid #c3e6cb;
+        }
+        .vv-contact-info { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; }
+        .vv-contact-email { color: #007bff; font-weight: 700; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header class="vv-header">
+    <div class="vv-container vv-header-inner">
+        <a href="../" class="vv-logo">
+            <img src="../assets/Logo.svg" alt="شعار ديجيتال 1.2">
+            <span>ديجيتال 1.2</span>
+        </a>
+        <nav class="vv-nav">
+            <a href="../">الرئيسية</a>
+            <a href="./about-us">من نحن</a>
+            <a href="./contact-us" class="active">اتصل بنا</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="vv-hero">
+        <div class="vv-container">
+            <span class="vv-badge">تواصل معنا الآن</span>
+            <h1>اتصل بنا</h1>
+            <p>لديك استفسارات حول حلول المشاهدة الرقمية أو خدماتنا؟ نحن هنا لمساعدتك في الحصول على أفضل تجربة ترفيهية.</p>
+        </div>
+    </section>
+
+    <section class="vv-section">
+        <div class="vv-container vv-narrow-content">
+            <div class="vv-card-simple" style="padding: 40px;">
+                
+                <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="vv-form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" class="vv-input" placeholder="أدخل اسمك الكريم" required>
+                    </div>
+                    
+                    <div class="vv-form-group">
+                        <label for="subject">الموضوع</label>
+                        <input type="text" id="subject" class="vv-input" placeholder="كيف يمكننا مساعدتك؟" required>
+                    </div>
+                    
+                    <div class="vv-form-group">
+                        <label for="message">رسالتك</label>
+                        <textarea id="message" class="vv-input" rows="5" placeholder="اكتب استفسارك أو طلبك هنا..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn" class="vv-submit-btn">إرسال الرسالة</button>
+                </form>
+
+                <div id="success-message">
+                    ✅ شكرًا لك! تم إرسال رسالتك بنجاح. سنقوم بالرد عليك في أقرب وقت ممكن.
+                </div>
+
+                <div class="vv-contact-info">
+                    <p>أو تواصل معنا مباشرة عبر البريد الإلكتروني:</p>
+                    <a href="mailto:digital1-2.com" class="vv-contact-email">contact@digital1-2.com</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="vv-footer">
+    <div class="vv-container vv-footer-inner">
+        <div class="vv-footer-grid">
+            <div class="vv-footer-main">
+                <div class="vv-footer-brand">
+                    <img src="../assets/Logo.svg" alt="شعار ديجيتال 1.2"> 
+                    <span>ديجيتال 1.2</span>
+                </div>
+                <p class="vv-footer-text">نساعد المبدعين والشركات على اكتشاف أدوات أتمتة وتسويق أكثر ذكاءً لتحقيق نمو مستدام عبر الإنترنت.</p>
+            </div>
+            <div class="vv-footer-col">
+                <h4>الشركة</h4>
+                <a href="./about-us">من نحن</a>
+                <a href="./contact-us" class="active">اتصل بنا</a>
+            </div>
+            <div class="vv-footer-col">
+                <h4>الشؤون القانونية</h4>
+                <a href="./privacy-policy">سياسة الخصوصية</a>
+                <a href="./terms-of-service">شروط الخدمة</a>
+                <a href="./refund-policy">سياسة الاسترداد</a>
+            </div>
+        </div>
+        <div class="vv-footer-bottom">
+            © 2026 ديجيتال 1.2. جميع الحقوق محفوظة.
+        </div>
+    </div>
+</footer>
+
+<script>
+    function handleFormSubmit(event) {
+        event.preventDefault(); // منع الصفحة من إعادة التحميل
+        
+        const btn = document.getElementById('submitBtn');
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('success-message');
+        
+        // تغيير حالة الزر أثناء "الإرسال" باللغة العربية
+        btn.innerHTML = 'جاري الإرسال...';
+        btn.style.opacity = '0.7';
+        btn.disabled = true;
+
+        // مهلة بسيطة (أقل من ثانية) لمحاكاة الإرسال
+        setTimeout(() => {
+            form.style.display = 'none'; // إخفاء الفورم
+            successMsg.style.display = 'block'; // إظهار رسالة النجاح
+        }, 800);
+    }
+</script>
+
+</body>
+
+</html>

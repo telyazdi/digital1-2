@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة — ديجيتال 1.2</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Favicon.webp">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../assets/style.css">
+    
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif !important;
+        }
+
+        .vv-faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vv-faq-item {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .vv-faq-item.active {
+            border-color: #007bff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .vv-faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            cursor: pointer;
+            text-align: right;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            outline: none;
+        }
+
+        .vv-faq-question:hover {
+            background-color: #fafafa;
+        }
+
+        .vv-faq-icon {
+            font-size: 22px;
+            font-weight: 400;
+            color: #007bff;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            margin-right: 15px; /* مسافة بسيطة من النص في حالة الـ RTL */
+        }
+
+        .vv-faq-item.active .vv-faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .vv-faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #fff;
+        }
+
+        .vv-faq-item.active .vv-faq-answer {
+            max-height: 500px; /* سعة كافية للنص */
+        }
+
+        .vv-faq-answer-inner {
+            padding: 0 20px 20px 20px;
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="vv-header">
+    <div class="vv-container vv-header-inner">
+        <a href="../" class="vv-logo">
+            <img src="../assets/Logo.svg" alt="ديجيتال 1.2">
+            <span>ديجيتال 1.2</span>
+        </a>
+        <nav class="vv-nav">
+            <a href="../">الرئيسية</a>
+            <a href="./about-us">من نحن</a>
+            <a href="./contact-us">اتصل بنا</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="vv-hero">
+        <div class="vv-container">
+            <span class="vv-badge">مركز المساعدة</span>
+            <h1>الأسئلة الشائعة</h1>
+            <p>كل ما تحتاج معرفته حول حلول المشاهدة الرقمية وكيفية البدء معنا.</p>
+        </div>
+    </section>
+
+    <section class="vv-section">
+        <div class="vv-container vv-narrow-content">
+            <div class="vv-faq-container">
+                
+                <div class="vv-faq-item">
+                    <button class="vv-faq-question">
+                        <span>كيف يمكنني الاشتراك؟</span>
+                        <span class="vv-faq-icon">+</span>
+                    </button>
+                    <div class="vv-faq-answer">
+                        <div class="vv-faq-answer-inner">
+                            <p>عملية الاشتراك سهلة للغاية. قم بالنقر على زر "استكشاف الخيارات المتاحة" في أعلى الصفحة أو "اشترك الآن"، وسينقلك ذلك إلى المتجر الرسمي حيث يمكنك اختيار الباقة المناسبة لك وإتمام عملية الدفع بأمان.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vv-faq-item">
+                    <button class="vv-faq-question">
+                        <span>ما هي الأجهزة التي تدعم الخدمة؟</span>
+                        <span class="vv-faq-icon">+</span>
+                    </button>
+                    <div class="vv-faq-answer">
+                        <div class="vv-faq-answer-inner">
+                            <p>خدمتنا تدعم مجموعة واسعة من الأجهزة بما في ذلك: شاشات التلفزيون الذكية (Smart TV)، أجهزة أندرويد بوكس، الهواتف الذكية (أندرويد و آيفون)، الأجهزة اللوحية (آيباد وتابلت)، وأجهزة الكمبيوتر (ويندوز وماك).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vv-faq-item">
+                    <button class="vv-faq-question">
+                        <span>هل يوجد ضمان واسترجاع؟</span>
+                        <span class="vv-faq-icon">+</span>
+                    </button>
+                    <div class="vv-faq-answer">
+                        <div class="vv-faq-answer-inner">
+                            <p>نعم، موقع ديجيتال 1.2 يضمن لك جودة الخدمة. في حالة واجهت مشكلة تقنية لا يمكن حلها أو لم تكن راضياً عن الخدمة وفقاً للشروط، يمكنك استرجاع أموالك. يرجى زيارة صفحة "سياسة الاسترداد" في تذييل الموقع لمزيد من التفاصيل.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vv-faq-item">
+                    <button class="vv-faq-question">
+                        <span>كيف يمكنني التواصل معكم؟</span>
+                        <span class="vv-faq-icon">+</span>
+                    </button>
+                    <div class="vv-faq-answer">
+                        <div class="vv-faq-answer-inner">
+                            <p>يمكنك التواصل معنا عبر البريد الإلكتروني الموضح في أسفل الصفحة (<a href="mailto:contact@digital1-2.com" style="color:#007bff; text-decoration: none;">ontact@digital1-2.com</a>) وسيقوم فريق الدعم بالرد عليك في أقرب وقت ممكن.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="vv-footer">
+    <div class="vv-container vv-footer-inner">
+        <div class="vv-footer-grid">
+            <div class="vv-footer-main">
+                <div class="vv-footer-brand">
+                    <img src="../assets/Logo.svg" alt="شعار ديجيتال 1.2"> 
+                    <span>ديجيتال 1.2</span>
+                </div>
+                <p class="vv-footer-text">نوفر لكم أفضل اشتراكات المشاهدة الرقمية بجودة عالية وثبات لا يضاهى لجميع أجهزتكم.</p>
+            </div>
+            <div class="vv-footer-col">
+                <h4>الشركة</h4>
+                <a href="./about-us">من نحن</a>
+                <a href="./contact-us">اتصل بنا</a>
+            </div>
+            <div class="vv-footer-col">
+                <h4>الشؤون القانونية</h4>
+                <a href="./privacy-policy">سياسة الخصوصية</a>
+                <a href="./terms-of-service">شروط الخدمة</a>
+                <a href="./refund-policy">سياسة الاسترداد</a>
+            </div>
+        </div>
+        <div class="vv-footer-bottom">
+            © 2026 ديجيتال 1.2. جميع الحقوق محفوظة.
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const faqButtons = document.querySelectorAll('.vv-faq-question');
+        
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                
+                // إغلاق أي سؤال آخر مفتوح
+                document.querySelectorAll('.vv-faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                // تبديل حالة السؤال الحالي
+                faqItem.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>
